@@ -1,33 +1,30 @@
-package ex1;
-
 public class while1 {
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		boolean run = true;
 		int speed = 0;
 		int keyCode = 0;
-		
-		while(run) {
-			if(keyCode != 13 && keyCode!=10)
-			{
+
+		while (run) {
+			if (keyCode != 13 && keyCode != 10) {
 				System.out.println("---------------------");
-				System.out.println("1.Áõ¼Ó  | 2.°¨¼Ó  | 3.ÁßÁö");
+				System.out.println("1.ï¿½ï¿½ï¿½ï¿½  | 2.ï¿½ï¿½ï¿½ï¿½  | 3.ï¿½ï¿½ï¿½ï¿½");
 				System.out.println("---------------------");
-				System.out.println("¼±ÅÃ : ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ : ");
 			}
-			
+
 			keyCode = System.in.read();
-			
-			if(keyCode == 49) { //1À» ÀÐ¾úÀ» °æ¿ì
+
+			if (keyCode == 49) { // 1ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 				speed++;
-				System.out.println("ÇöÀç ¼Óµµ =  " + speed);
-			}else if (keyCode ==50) { //2¸¦ ÀÐ¾úÀ»°æ¿ì 
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ =  " + speed);
+			} else if (keyCode == 50) { // 2ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				speed--;
-				System.out.println("ÇöÀç ¼Óµµ =  " + speed);
-			}else if (keyCode ==51) { //3À» ÀÐ¾úÀ»°æ¿ì
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ =  " + speed);
+			} else if (keyCode == 51) { // 3ï¿½ï¿½ ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				run = false;
 			}
 		}
-		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+
+		System.out.println("ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½");
 	}
 }

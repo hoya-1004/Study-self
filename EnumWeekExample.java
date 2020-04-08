@@ -1,37 +1,42 @@
-package ex1;
-
 import java.util.Calendar;
 
 public class EnumWeekExample {
 	public static void main(String[] args) {
-		Week today = null;//¿­°ÅÅ¸ÀÔ º¯¼ö ¼±¾ð
-		
+		Week today = null;// ï¿½ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
 		Calendar cal = Calendar.getInstance();
 		int week = cal.get(Calendar.DAY_OF_WEEK);
-		
-		switch(week) {
-		case 1:
-			today  = Week.SUNDAY;break; //¿­°Å »ó¼ö ´ëÀÔ
-		case 2:
-			today  = Week.MONDAY;break;
-		case 3:
-			today  = Week.TUESDAY;break;
-		case 4:
-			today  = Week.WEDNESDAY;break;
-		case 5:
-			today  = Week.THURSDAY;break;
-		case 6:
-			today  = Week.FRIDAY;break;
-		case 7:
-			today  = Week.SATURDAY;break;
+
+		switch (week) {
+			case 1:
+				today = Week.SUNDAY;
+				break; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			case 2:
+				today = Week.MONDAY;
+				break;
+			case 3:
+				today = Week.TUESDAY;
+				break;
+			case 4:
+				today = Week.WEDNESDAY;
+				break;
+			case 5:
+				today = Week.THURSDAY;
+				break;
+			case 6:
+				today = Week.FRIDAY;
+				break;
+			case 7:
+				today = Week.SATURDAY;
+				break;
 		}
-		
-		System.out.println("¿À´Ã ¿äÀÏ: " + today);
-		
-		if(today == Week.SUNDAY) {
-			System.out.println("ÀÏ¿äÀÏÀº Ãà±¸¸¦ ÇÕ´Ï´Ù.");
-		}else {
-			System.out.println("¿­½ÉÈ÷ ÀÚ¹Ù °øºÎÇÕ´Ï´Ù.");
+
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: " + today);
+
+		if (today == Week.SUNDAY) {
+			System.out.println("ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½à±¸ï¿½ï¿½ ï¿½Õ´Ï´ï¿½.");
+		} else {
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 		}
 	}
 }
