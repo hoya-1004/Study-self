@@ -1,0 +1,21 @@
+6.2
+list1 = ["p","y","t","h","o","n","m"]#["p","y","t","h","o","n","m"]
+print(list1[2:5])#['t', 'h', 'o']
+print(list1[:-5])#['p', 'y']
+print("p" in list1)#True
+list1.remove("m")#['p', 'y', 't', 'h', 'o', 'n']
+print(list1)#['p', 'y', 't', 'h', 'o', 'n']
+list1[2:3] = []#['p', 'y', 'h', 'o', 'n']
+6.3
+두 소스는 출력시 ['a', 'is', 'language', 'programming', 'python'] 로 동일하나 .sort()함수는 원본리스트 자체를 변환하는것이고 sorted함수는 사용시에만 리스트의 내용을 바꿔서출력하고 원본리스트에는 영향을 주지않습니다
+6.4
+str1 = "20200320Sunny"
+date = str1[0:8]
+weather = str1[8:]
+print(date)
+print(weather)
+6.5
+matrix = [[1,2,3,],[4,5,6],[7,8,9]]#[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrix_row = [row for row in matrix]#[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrix_row_element = [row_element for row in matrix for row_element in row]#[1, 2, 3, 4, 5, 6, 7, 8, 9]
+eq_matrix = [[element**2 for element in mat_list]for mat_list in matrix]#[[1, 4, 9], [16, 25, 36], [49, 64, 81]]
